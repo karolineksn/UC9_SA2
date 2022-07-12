@@ -1,0 +1,1 @@
+alert("Bem-vindx ao Game Mania!")
