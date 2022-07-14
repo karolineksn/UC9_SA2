@@ -1,1 +1,70 @@
-<p>home works!</p>
+<header>
+    <div class="container cabecalho">
+        <a href="#"><img class="logo" src="../assets/img/LogoDoTopo.png" alt="Logo"></a>
+        
+        <nav id="menu" class="menu">
+            <a href="#" target="_blank">Início</a>
+            <a href="#" target="_blank">Login</a>
+            <a href="#" target="_blank">Favoritos</a>
+            <a href="#" target="_blank">Carrinho</a>
+            
+        </nav>
+    </div>
+  </header>
+  
+
+
+  <form #userForm="ngForm" (ngSubmit)="OnSubmit()">
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" [(ngModel)] = "userModel.email">
+
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" [(ngModel)] = "userModel.senha">
+      <button type="submit">Enviar</button>
+  </form>
+
+  <!--Carrossel-->
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../assets/img/Banner.png" class="d-block w-100" alt="Banner1">
+      </div>
+      <div class="carousel-item">
+        <img src="../assets/img/Banner.png" class="d-block w-100" alt="Banner2">
+      </div>
+      <div class="carousel-item">
+        <img src="../assets/img/Banner.png" class="d-block w-100" alt="Banner3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!--FimCarrossel-->
+  <!--Cards-->
+  <p></p>
+  <div class="row row-cols-1 row-cols-md-4 g-4">
+    <div class="col">
+      <a href="#"><img src="../assets/img/card1.png" class="card-img-top" alt="..."></a>
+    </div>
+    <div class="col">
+      <a href="#"><img src="../assets/img/card2.png" class="card-img-top" alt="..."></a>
+    </div>
+    <div class="col">
+      <a href="#"><img src="../assets/img/card3.png" class="card-img-top" alt="..."></a>
+    </div>
+    <div class="col">
+      <a href="#"><img src="../assets/img/card4.png" class="card-img-top" alt="..."></a>
+    </div>
+  </div>
+  
+  <!--FimCards-->
+  <footer>
+    <p><br>
+    <a href="#"></a></p>
+  </footer>
